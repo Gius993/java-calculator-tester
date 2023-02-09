@@ -23,7 +23,7 @@ public class CalculatorTest {
 	void testSum() {
 		float sum = calculator.add(6, 6);
 		
-		assertEquals(10, sum, "Somma non possibile");
+		assertEquals(12, sum, "Somma non possibile");
 	}
 	
 	
@@ -32,14 +32,14 @@ public class CalculatorTest {
 	void testsubtraction() {
 		float subtraction = calculator.subctract(2.6f, 6.2f);
 		
-		assertEquals(-2.7000003f, subtraction, "Sottrazione non possibile");
+		assertEquals(-3.6000003f, subtraction, "Sottrazione non possibile");
 	}
 	
 	@Test
 	@DisplayName("Test division")
 	void testDivision() throws Exception{
 		float divide = calculator.divide(10, 5);
-		assertEquals(3, divide, "non si puo dividere questo numero");
+		assertEquals(2, divide, "non si puo dividere questo numero");
 	}
 	
 	@Test
